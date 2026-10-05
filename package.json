@@ -1,0 +1,14 @@
+{
+  "name": "devops-sample-app",
+  "version": "1.0.0",
+  "description": "DevOps Laboratory Sample Application for CI/CD",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "node test.js",
+    "build": "node -e \"console.log('Packaging application for distribution...'); console.log('Build artifacts generated in ./dist');\""
+  },
+  "keywords": ["devops", "ci-cd", "github-actions"],
+  "author": "Bhavanesh",
+  "license": "MIT"
+}

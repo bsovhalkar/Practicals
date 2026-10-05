@@ -1,0 +1,22 @@
+stages:
+  - build
+  - test
+  - deploy
+
+build_job:
+  stage: build
+  script:
+    - npm install
+    - npm run build
+
+test_job:
+  stage: test
+  script:
+    - npm test
+
+deploy_job:
+  stage: deploy
+  script:
+    - echo "Deploying application..."
+  only:
+    - main
